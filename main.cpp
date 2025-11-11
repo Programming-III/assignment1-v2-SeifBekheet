@@ -76,13 +76,12 @@ Course:: addStudent(const Student& s){
                 cout<<"Class is full"<<endl;
         }
 Course::displayCourseInfo(){
-        cout<<"Course code"<<courseCode<<endl;
-        cout<<"Course name"<<courseName<<endl;
-        cout<<"Max number of students"<<maxStudents<<endl;
+        cout<<"Course"<<courseCode<<"-"<<courseName<<endl;
+        cout<<"Max students"<<maxStudents<<endl;
         for(int i=0;i<currentStudents;i++){
             *students[i].display();
         }
-        cout<<"Current students "<<currentStudents<<endl;
+        cout<<"Current number students "<<currentStudents<<endl;
         }
 
 
@@ -95,5 +94,7 @@ Course::displayCourseInfo(){
 
 int main()
 {
-Student s=Student("Seif",16002096,2,"CS");
+Student s=Student("Omar Nabil",2202,2,"Informatics");
+ Instructor I=Instructor("Dr Lina Khaled",1111,"Computer Science",5);
+ Course c= Course("CS101","Introduction to Programming",3,&Student,1);
 }

@@ -1,20 +1,21 @@
 #ifndef PERSON_H
 #define PERSON_H
-
-#include <string>
+#include <iostream>
 using namespace std;
 
-//#write Person class here
+
+class Person
+{
+private:
+   string name;
+   int id; 
+    public:
+        Person(){}
+        Person(string n,int i){}
+         virtual display(){}
+        
 
 
+};
 
-
-
-
-
-
-
-
-
-
-#endif
+#endif // PERSON_H
